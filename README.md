@@ -1,24 +1,32 @@
-Car Rental System Documentation
-Overview
+**CAR RENTAL DOCUMENTATION**
+
+_Overview_
 The Car Rental System is a Java-based application that allows users to manage a fleet of cars, book rentals, and return cars. It includes classes to represent cars, rentals, customers, and the operations involved in renting out a vehicle.
 
-Table of Contents
+**Table of Contents**
 Classes
 Car
 Customer
 Rental
 CarRentalSystem
 
-Features
+_Features_
+
 Add Cars: The system starts with a few predefined cars that can be rented.
+
 Register Customers: New customers can be registered into the system.
+
 List Available Cars: Displays all cars that are currently available for rent.
-Rent a Car: Customers can rent a car by providing their customer ID and the car's license plate number.
+
+Rent a Car: Customers can rent a car by providing their customer ID and the car's license plate number
+.
 Return a Car: Rented cars can be returned, making them available for future rentals.
+
 Simple Command-Line Interface: Users can interact with the system through the terminal by choosing options from a menu.
-Classes
+
+**Classes**
 --------------------------------------------------------------------------------------
-1. Car
+_1. Car_
 Represents a car in the system.
 
 Attributes:
@@ -33,7 +41,7 @@ getModel(): Returns the car model.
 isAvailable(): Checks if the car is available for rent.
 setAvailable(boolean available): Sets the availability status of the car.
 ----------------------------------------------------------------------------------
-2. Customer
+_2. Customer_
 Represents a customer registered in the system.
 
 Attributes:
@@ -45,7 +53,8 @@ Methods:
 getId(): Returns the customer ID.
 getName(): Returns the customer name.
 ----------------------------------------------------------------------------------
-3. RentalAgency
+_3. RentalAgency_
+
 Manages the operations of the car rental system, including cars, customers, and rentals.
 
 Attributes:
@@ -60,7 +69,8 @@ rentCar(String customerId, String licensePlate): Rents a car to a customer.
 returnCar(String licensePlate): Marks a car as returned and makes it available again.
 listAvailableCars(): Lists all cars that are currently available for rent.
 --------------------------------------------------------------------------------
-How to Use
+**How to Use**
+
 1. Clone the Repository
 bash
 Copy code
